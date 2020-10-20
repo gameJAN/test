@@ -36,10 +36,10 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue}": [
-      "eslint --max-warnings 0"
+      "eslint src"
     ],
     "src/**/*.{jsx,txs,ts,js,json,css,vue}": [
-      "eslint --max-warnings 0"
+      "eslint src"
     ]
   },
   "husky": {
