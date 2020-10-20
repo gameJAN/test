@@ -44,7 +44,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint src/**/*{.js,.vue}"
+      "pre-commit": "lint-staged"
     }
   }
 }
