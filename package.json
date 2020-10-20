@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "pre-commit": "lint-staged src/**/*{.js,.vue}"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -36,15 +37,5 @@
   },
   "gitHooks": {
     "pre-commit": "lint-staged src/**/*{.js,.vue}"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "eslint --max-warnings 0"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged src/**/*{.js,.vue}"
-    }
   }
 }
